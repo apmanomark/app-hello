@@ -5,13 +5,31 @@ general:
   build_dir: build
 
 
+
 ## Configure the test machine
 
 machine:
-  services:
-    - couchbase-server
+    
+    # Override /etc/hosts
+    
+    hosts:
+        circlehost: 127.0.0.1
+        dev.apmano.co: 127.0.0.1
+    
+    # make couchbase available
 
+    services:
+        - couchbase-server
+    
+    # set envionment variables 
+    
+    environment:
+    
+        # for testflight
+        TF_API_TOKEN = ba0eece2d940f181bc515d98bfe01bd3_MTkwMjMwMDIwMTQtMDYtMDkgMTE6MTA6MDUuOTA1ODU3
+        TF_TEAM_TOKEN = 4a6014a1548c3d07d2097abbdfb5d36b_MzkxMzc3MjAxNC0wNi0wOSAxMzowMjo0OS4zMDYxMTU
 
+    
 ## Check out your code
 
 checkout:
@@ -21,7 +39,24 @@ checkout:
 ## Set up your test dependencies
 
     # sencha cmd (for easy phonegap build intergration)
+    # http://www.sencha.com/forum/showthread.php?278435-Install-over-command-line
+    
+    curl -o bundle/sencha-cmd.run.zip http://cdn.sencha.com/cmd/5.0.0.160/SenchaCmd-5.0.0.160-linux.run.zip
+    unzip -p bundle/sencha-cmd.run.zip > bundle/sencha-cmd.run
+    rm bundle/sencha-cmd.run.zip
 
+    chmod +x bundle/sencha-cmd.run
+    ./bundle/sencha-cmd.run --mode unattended --prefix /path/to/install/dir
+    rm bundle/sencha-cmd.run
+    
+    
+    # phonehap cli
+    
+    $ sudo npm install -g phonegap
+    
+
+    #shenzhen for cli deployment to test flight
+    $ gem install shenzhen
 
 ## Set up your test databases
 
@@ -31,14 +66,30 @@ checkout:
 ## Run your tests
 
     # run jasimine tests
+    
+    
+    # run BDD tests (in browser)
 
 
 ## Build the app
 
     # phonegap build
+    
+    sencha 
+    
 
 
-## (Optionally) deploy your code
+## deploy your code
+
+    # send to phonegap build
+    
+    
+    # run testingbot tests
+
+
+    # deploy to testflight using shenzhen
+    $ ipa distribute:testflight -a TF_API_TOKEN -T TF_TEAM_TOKEN
+
 
 
 ## Custom notifications
