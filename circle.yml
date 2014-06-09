@@ -5,7 +5,6 @@ general:
   build_dir: build
 
 
-
 ## Configure the test machine
 
 machine:
@@ -36,7 +35,7 @@ checkout:
 ## Set up your test dependencies
 
 dependencies:
-    commands:
+    override:
     # sencha cmd (for easy phonegap build intergration)
     # http://www.sencha.com/forum/showthread.php?278435-Install-over-command-line
       - ./src/sencha-cmd.sh
