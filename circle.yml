@@ -1,0 +1,49 @@
+
+## Set build sub-directory
+
+general:
+  build_dir: build
+
+
+## Configure the test machine
+
+machine:
+  services:
+    - couchbase-server
+
+
+## Check out your code
+
+checkout:
+    - git checkout
+
+
+## Set up your test dependencies
+
+    # sencha cmd (for easy phonegap build intergration)
+
+
+## Set up your test databases
+
+    # could use couch (non-mobile) for pre build testing
+
+
+## Run your tests
+
+    # run jasimine tests
+
+
+## Build the app
+
+    # phonegap build
+
+
+## (Optionally) deploy your code
+
+
+## Custom notifications
+notify:
+  webhooks:
+    # A list of hashes representing hooks. Only the url field is supported.
+    # Send email after build
+    - url: https://zapier.com/hooks/catch/02t5i/
