@@ -76,9 +76,12 @@ dependencies:
 
 
     # deploy to testflight using shenzhen
+    
 deployment:
-    commands:
-      - ipa distribute:testflight -a TF_API_TOKEN -T TF_TEAM_TOKEN
+    device-prod:
+        branch: master
+        commands:
+        - ipa distribute:testflight -a TF_API_TOKEN -T TF_TEAM_TOKEN
 
 
 ## Custom notifications
