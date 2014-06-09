@@ -35,23 +35,18 @@ machine:
 checkout:
     commands:
       - ./src/sencha-cmd.sh
-
+      - sudo npm install -g phonegap
+      - gem install shenzhen
+      
 ## Set up your test dependencies
 
     # sencha cmd (for easy phonegap build intergration)
     # http://www.sencha.com/forum/showthread.php?278435-Install-over-command-line
 
-      
-    
-
     
     # phonehap cli
-    
-    $ sudo npm install -g phonegap
-    
 
     #shenzhen for cli deployment to test flight
-    $ gem install shenzhen
 
 ## Set up your test databases
 
