@@ -76,7 +76,9 @@ checkout:
 
 
     # deploy to testflight using shenzhen
-    $ ipa distribute:testflight -a TF_API_TOKEN -T TF_TEAM_TOKEN
+deployment:
+    commands:
+      - ipa distribute:testflight -a TF_API_TOKEN -T TF_TEAM_TOKEN
 
 
 
