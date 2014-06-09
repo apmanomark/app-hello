@@ -65,9 +65,7 @@ checkout:
 
     # phonegap build
     
-    sencha 
     
-
 
 ## deploy your code
 
