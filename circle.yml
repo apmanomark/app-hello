@@ -33,16 +33,15 @@ machine:
 ## Check out your code
 
 checkout:
-    - git checkout
-
+    commands:
+      - ./src/sencha-cmd.sh
 
 ## Set up your test dependencies
 
     # sencha cmd (for easy phonegap build intergration)
     # http://www.sencha.com/forum/showthread.php?278435-Install-over-command-line
 
-      commands:
-      - ./src/sencha-cmd.sh
+      
     
 
     
