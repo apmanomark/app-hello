@@ -27,6 +27,6 @@ general:
 dependencies:
   pre:
     #- ssh -T aptesttools@github.com
-    - sh buid/sencha-cmd.sh # sencha cmd (for easy phonegap build intergration) # http://www.sencha.com/forum/showthread.php?278435-Install-over-command-line
+    - sh ./home/ubuntu/app-hello/build/sencha-cmd.sh # sencha cmd (for easy phonegap build intergration) # http://www.sencha.com/forum/showthread.php?278435-Install-over-command-line
 
 
