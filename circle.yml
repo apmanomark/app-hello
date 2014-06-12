@@ -1,105 +1,72 @@
+machine:
 
-## TODO:
+  timezone:
+    America/Los_Angeles # Set the timezone
 
-    # PHASE 1
-        # Add Sencha hello world to repo [done]
-        # Add one simple Jasimine unit test
-        # Sencha phonegap (android) build (to test link)
+  # Version of ruby to use
+  ruby:
+    version:
+      1.8.7-p358-falcon-perf
 
-    # PHASE 2
-        # BDD tests
-            # Node run tests; nightwatch, yadda etc. or look at ruby cabraya etc.
+  # Override /etc/hosts
+  hosts:
+    circlehost: 127.0.0.1
+    dev.mycompany.com: 127.0.0.1
 
+  # Add some environment variables
+  environment:
+    CIRCLE_ENV: test
+    DATABASE_URL: postgres://ubuntu:@127.0.0.1:5432/circle_test
 
-## Set build sub-directory
-
-general:
-  build_dir: build
-
-
-## Configure the test machine
-
-#machine:
-    #environment:
-        # TF_API_TOKEN: ba0eece2d940f181bc515d98bfe01bd3_MTkwMjMwMDIwMTQtMDYtMDkgMTE6MTA6MDUuOTA1ODU3
-        # TF_TEAM_TOKEN: 4a6014a1548c3d07d2097abbdfb5d36b_MzkxMzc3MjAxNC0wNi0wOSAxMzowMjo0OS4zMDYxMTU
-        
-
-        
-    # Override /etc/hosts
-    
-    # hosts:
-    #    circlehost: 127.0.0.1
-    #    dev.apmano.co: 127.0.0.1
-    
-    # make couchbase available
-
-    #services:
-    #   - couchbase-server
-    
-    # set envionment variables
-    
-# for testflight  
-    
-    
-## Check out your code
-
+## Customize checkout
 checkout:
-      
-## Set up your test dependencies
+  post:
+    - git submodule sync
+    - git submodule update --init # use submodules
 
+## Customize dependencies
 dependencies:
-    override:
-    # sencha cmd (for easy phonegap build intergration)
-    # http://www.sencha.com/forum/showthread.php?278435-Install-over-command-line
-      - sh ./src/sencha-cmd.sh
-      
-    # phonehap cli
-      - sudo npm install -g phonegap
-      
-    #shenzhen for cli deployment to test flight
-      - gem install shenzhen
+  pre:
+    - npm install coffeescript # install from a different package manager
+    - gem uninstall bundler # use a custom version of bundler
+    - gem install bundler --pre
 
-    
-## Set up your test databases
+  override:
+    - bundle install: # note ':' here
+        timeout: 180 # fail if command has no output for 3 minutes
 
-    # could use couch (non-mobile) for pre build testing
+  # we automatically cache and restore many dependencies between
+  # builds. If you need to, you can add custom paths to cache:
+  cache_directories:
+    - "custom_1"   # relative to the build directory
+    - "~/custom_2" # relative to the user's home directory
 
+## Customize database setup
+database:
+  override:
+    # replace CircleCI's generated database.yml
+    - cp config/database.yml.ci config/database.yml
+    - bundle exec rake db:create db:schema:load
 
-## Run your tests
+## Customize test commands
+test:
+  override:
+    - phpunit test/unit-tests # use PHPunit for testing
+  post:
+    - bundle exec rake jasmine:ci: # add an extra test type
+        environment:
+          RAILS_ENV: test
+          RACK_ENV: test
 
-    # run jasimine tests
-    
-    
-    # run BDD tests (in browser)
-
-
-## Build the app
-
-    # phonegap build
-    
-    
-
-## deploy your code
-
-    # send to phonegap build
-    
-    
-    # run testingbot tests
-
-
-    # deploy to testflight using shenzhen
-    
+## Customize deployment commands
 deployment:
-    device-prod:
-        branch: master
-        commands:
-        - ipa distribute:testflight -a TF_API_TOKEN -T TF_TEAM_TOKEN
-
+  staging:
+    branch: master
+    heroku:
+      appname: foo-bar-123
 
 ## Custom notifications
 notify:
   webhooks:
     # A list of hashes representing hooks. Only the url field is supported.
-    # Send email after build
-    - url: https://zapier.com/hooks/catch/02t5i/
+    - url: https://someurl.com/hooks/circle
