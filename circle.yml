@@ -19,8 +19,7 @@ machine:
     TF_TEAM_TOKEN: 4a6014a1548c3d07d2097abbdfb5d36b_MzkxMzc3MjAxNC0wNi0wOSAxMzowMjo0OS4zMDYxMTU
 
 
-## Customize checkout
-#checkout:
+
 
 ## Customize dependencies
 
