@@ -18,14 +18,15 @@ machine:
     TF_API_TOKEN: ba0eece2d940f181bc515d98bfe01bd3_MTkwMjMwMDIwMTQtMDYtMDkgMTE6MTA6MDUuOTA1ODU3
     TF_TEAM_TOKEN: 4a6014a1548c3d07d2097abbdfb5d36b_MzkxMzc3MjAxNC0wNi0wOSAxMzowMjo0OS4zMDYxMTU
 
-
+general:
+  build_dir: build
 
 
 ## Customize dependencies
 
 dependencies:
   pre:
-    - ssh -T aptesttools@github.com
-    #- git fetch sencha-cmd.sh # sencha cmd (for easy phonegap build intergration) # http://www.sencha.com/forum/showthread.php?278435-Install-over-command-line
+    #- ssh -T aptesttools@github.com
+    - sh buid/sencha-cmd.sh # sencha cmd (for easy phonegap build intergration) # http://www.sencha.com/forum/showthread.php?278435-Install-over-command-line
 
 
