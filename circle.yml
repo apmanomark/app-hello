@@ -7,6 +7,9 @@
   #ruby:
     #version:
       #1.9.3
+         
+  node:
+    version: v0.10.28
 
   # Override /etc/hosts
   #hosts:
