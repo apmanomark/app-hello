@@ -30,13 +30,17 @@ machine:
 dependencies:
   pre:
     # Install Sencha CMD
-    - chmod +x sencha-cmd.sh 
-    - sh ./sencha-cmd.sh # sencha cmd (for easy phonegap build intergration) # http://www.sencha.com/forum/showthread.php?278435-Install-over-command-line
-    
+    - chmod +x sencha-download.sh
+    - chmod +x sencha-install.sh
+     
+    - sh ./sencha-download.sh # sencha cmd (for easy phonegap build intergration) # http://www.sencha.com/forum/showthread.php?278435-Install-over-command-line
+    - sh ./sencha-cmd.sh
+     
     # Install Phonegap CLI
     - npm install -g phonegap # phonehap cli
     
   post:
+   
     - sencha 
     
 
