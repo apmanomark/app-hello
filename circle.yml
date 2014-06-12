@@ -4,19 +4,19 @@ machine:
     Europe/London # Set the timezone
 
   # Version of ruby to use
-  #ruby:
-    #version:
-      #1.9.3
+  ruby:
+    version:
+      1.9.3
 
   # Override /etc/hosts
-  #hosts:
-    #circlehost: 127.0.0.1
-    #dev.apmano.com: 127.0.0.1
+  hosts:
+    circlehost: 127.0.0.1
+    dev.apmano.com: 127.0.0.1
 
   # Add some environment variables
-  #environment:
-    #TF_API_TOKEN: ba0eece2d940f181bc515d98bfe01bd3_MTkwMjMwMDIwMTQtMDYtMDkgMTE6MTA6MDUuOTA1ODU3
-    #TF_TEAM_TOKEN: 4a6014a1548c3d07d2097abbdfb5d36b_MzkxMzc3MjAxNC0wNi0wOSAxMzowMjo0OS4zMDYxMTU
+  environment:
+    TF_API_TOKEN: ba0eece2d940f181bc515d98bfe01bd3_MTkwMjMwMDIwMTQtMDYtMDkgMTE6MTA6MDUuOTA1ODU3
+    TF_TEAM_TOKEN: 4a6014a1548c3d07d2097abbdfb5d36b_MzkxMzc3MjAxNC0wNi0wOSAxMzowMjo0OS4zMDYxMTU
 
 
 ## Customize checkout
