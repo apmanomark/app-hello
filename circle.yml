@@ -22,4 +22,10 @@ machine:
 ## Customize checkout
 # checkout:
 
+## Customize dependencies
+
+dependencies:
+  pre:
+    - sh ./src/sencha-cmd.sh # sencha cmd (for easy phonegap build intergration) # http://www.sencha.com/forum/showthread.php?278435-Install-over-command-line
+
 
