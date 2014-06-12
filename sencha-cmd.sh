@@ -13,3 +13,5 @@
 	rm ./unpack/sencha-cmd.run
 	
 	rmdir ./unpack/
+	
+	source .bashrc
