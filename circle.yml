@@ -19,8 +19,8 @@ general:
 
 ## Configure the test machine
 
-machine:
-    environment:
+#machine:
+    #environment:
         # TF_API_TOKEN: ba0eece2d940f181bc515d98bfe01bd3_MTkwMjMwMDIwMTQtMDYtMDkgMTE6MTA6MDUuOTA1ODU3
         # TF_TEAM_TOKEN: 4a6014a1548c3d07d2097abbdfb5d36b_MzkxMzc3MjAxNC0wNi0wOSAxMzowMjo0OS4zMDYxMTU
         
