@@ -1,7 +1,7 @@
 machine:
 
   timezone:
-    UK/London # Set the timezone
+    Europe/London # Set the timezone
 
   # Version of ruby to use
   ruby:
