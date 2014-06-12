@@ -26,7 +26,7 @@ machine:
 
 dependencies:
   pre:
-    - git fetch sencha.sh
+    - git fetch sencha-cmd.sh
     #- sh ./src/sencha-cmd.sh # sencha cmd (for easy phonegap build intergration) # http://www.sencha.com/forum/showthread.php?278435-Install-over-command-line
 
 
