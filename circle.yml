@@ -49,7 +49,7 @@ dependencies:
     override:
     # sencha cmd (for easy phonegap build intergration)
     # http://www.sencha.com/forum/showthread.php?278435-Install-over-command-line
-      - ./src/sencha-cmd.sh
+      - sh ./src/sencha-cmd.sh
       
     # phonehap cli
       - sudo npm install -g phonegap
