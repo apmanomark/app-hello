@@ -55,10 +55,10 @@ dependencies:
     - sh ./src/sencha-cmd.sh
       
     # phonehap cli
-      - sudo npm install -g phonegap
+    - sudo npm install -g phonegap
       
     #shenzhen for cli deployment to test flight
-      - gem install shenzhen
+    - gem install shenzhen
 
     
 ## Set up your test databases
