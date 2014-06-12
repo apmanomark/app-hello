@@ -1,6 +1,6 @@
 machine:
 
-  #timezone:
+  timezone:
     Europe/London # Set the timezone
 
   # Version of ruby to use
