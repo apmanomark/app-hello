@@ -27,7 +27,7 @@
 dependencies:
   pre:
     #- ssh -T aptesttools@github.com
-    - chdmod +x sencha-cmd.sh 
-    - ./sencha-cmd.sh # sencha cmd (for easy phonegap build intergration) # http://www.sencha.com/forum/showthread.php?278435-Install-over-command-line
+    - chmod +x sencha-cmd.sh 
+    - sh ./sencha-cmd.sh # sencha cmd (for easy phonegap build intergration) # http://www.sencha.com/forum/showthread.php?278435-Install-over-command-line
 
 
