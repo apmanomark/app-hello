@@ -40,7 +40,6 @@ dependencies:
     - npm install -g phonegap # phonehap cli
     
   post:
-   
-    - sencha 
+    - sencha which
     
 
