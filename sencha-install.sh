@@ -7,6 +7,5 @@
 	
 	rmdir ./unpack/
 	
-	source .bashrc
 	cd ./sencha/
 	ls
