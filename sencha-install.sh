@@ -11,4 +11,5 @@
 	
 	cd ./sencha/Sencha
 	ls
+	export PATH=~/bin/Sencha/Cmd/5.0.0.160:$PATH
 	printenv
