@@ -8,3 +8,4 @@
 	rmdir ./unpack/
 	
 	source .bashrc
+	ls
