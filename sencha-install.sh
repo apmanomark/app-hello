@@ -12,4 +12,3 @@
 	cd ./sencha/Sencha
 	ls
 	printenv
-compgen -v
