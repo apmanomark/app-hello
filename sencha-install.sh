@@ -7,7 +7,8 @@
 	
 	rmdir ./unpack/
 	
-	source ~/.bashrc
+	# source ~/.bashrc
 	
 	cd ./sencha/Sencha
 	ls
+	compgen -v
