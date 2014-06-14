@@ -34,6 +34,7 @@ dependencies:
     # Install Sencha CMD
     - chmod +x ./sencha-fresh.sh 
     - ./sencha-fresh.sh
+    - sencha which
 
     # Install Phonegap CLI
     - npm install -g phonegap
