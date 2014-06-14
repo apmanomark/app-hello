@@ -1,5 +1,5 @@
 
-sudo apt-get install unzip
+apt-get install unzip
 
 mkdir ./unpack/
 curl -o ./unpack/sencha-cmd.run.zip http://cdn.sencha.com/cmd/${SENCHA_CMD_VERSION}/SenchaCmd${SENCHA_CMD_VERSION}-linux-x64.run.zip
