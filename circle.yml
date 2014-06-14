@@ -39,6 +39,9 @@ dependencies:
     # Install Phonegap CLI
     - npm install -g phonegap
     
+    # Install Jasmine
+# *** TODO ***
+    
     # Install Karma Test Runner, CLI and PhantomJS driver
     - npm install karma
     - npm install -g karma-cli
