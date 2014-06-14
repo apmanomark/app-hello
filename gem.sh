@@ -1,0 +1,2 @@
+gem 'jasmine'
+gem 'rake'
