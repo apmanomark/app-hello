@@ -40,6 +40,9 @@ dependencies:
     - npm install -g phonegap
     
     # Install Jasmine
+    - chmod +x ./gem.sh
+    - ./gem.sh
+    
 # *** TODO ***
     
     # Install Karma Test Runner, CLI and PhantomJS driver
@@ -59,7 +62,7 @@ dependencies:
 
 test:
   override:
-    - karma 
+    - karma --version #test karma works
     
 
 
