@@ -4,12 +4,11 @@ machine:
     #Europe/London # Set the timezone
 
   # Version of ruby to use
-  #ruby:
-    #version:
-      #1.9.3
+  ruby:
+    version: 1.9.3
          
-  #node:
-    #version: v0.10.28
+  node:
+    version: v0.10.28
 
   # Override /etc/hosts
   #hosts:
@@ -33,16 +32,19 @@ machine:
 dependencies:
   pre:
     # Install Sencha CMD
-    - chmod +x ./sencha-fresh.sh
+    - chmod +x ./sencha-fresh.sh 
     - ./sencha-fresh.sh
 
     # Install Phonegap CLI
-    #- npm install -g phonegap # phonehap cli
+    - npm install -g phonegap
     
-  post:
-    - printenv
-    - sencha which
+    # Install Karma Test Runner
+    - npm install karma
+    
+    # Install Jasimine Adaptor for Karma
+    - npm install karma-jasmine@2_0 --save-dev
 
   #cache_directories:
     #- "custom_1"   # relative to the build directory 
 
+  
