@@ -1,2 +1,2 @@
-gem 'jasmine'
-gem 'rake'
+gem install jasmine
+gem install rake
