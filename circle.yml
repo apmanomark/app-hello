@@ -18,7 +18,7 @@ machine:
 
   # Add some environment variables
   environment:
-    SENCHA_DIR: sencha
+    #SENCHA_DIR: sencha
     SENCHA_CMD_VERSION: 5.0.0.160
     
     #TF_API_TOKEN: ba0eece2d940f181bc515d98bfe01bd3_MTkwMjMwMDIwMTQtMDYtMDkgMTE6MTA6MDUuOTA1ODU3
