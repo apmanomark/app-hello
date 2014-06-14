@@ -12,5 +12,5 @@ rm  ./unpack/sencha-cmd.run.zip
 
 chmod +x ./unpack/sencha-cmd.run
 ./unpack/sencha-cmd.run --mode unattended 
-
+rm  ./unpack/sencha-cmd.run
 

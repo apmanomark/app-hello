@@ -37,7 +37,7 @@ dependencies:
     - ./sencha-fresh.sh
 
     # Install Phonegap CLI
-    - npm install -g phonegap # phonehap cli
+    #- npm install -g phonegap # phonehap cli
     
   post:
     - printenv
