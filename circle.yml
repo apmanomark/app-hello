@@ -43,5 +43,6 @@ dependencies:
     - printenv
     - sencha which
 
-    
+  #cache_directories:
+    #- "custom_1"   # relative to the build directory 
 
