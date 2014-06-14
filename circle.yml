@@ -8,8 +8,8 @@ machine:
     #version:
       #1.9.3
          
-  node:
-    version: v0.10.28
+  #node:
+    #version: v0.10.28
 
   # Override /etc/hosts
   #hosts:
@@ -33,8 +33,8 @@ machine:
 dependencies:
   pre:
     # Install Sencha CMD
-    - chmod +x ./sencha-deft-install.sh
-    - ./sencha-deft-install.sh
+    - chmod +x ./sencha-fresh.sh
+    - ./sencha-fresh.sh
     #- chmod +x sencha-download.sh
     #- chmod +x sencha-install.sh
      
