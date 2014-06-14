@@ -1,7 +1,7 @@
 
+mkdir ./unpack/
 curl -o ./unpack/sencha-cmd.run.zip http://cdn.sencha.com/cmd/${SENCHA_CMD_VERSION}/SenchaCmd${SENCHA_CMD_VERSION}-linux-x64.run.zip
 
-mkdir ./unpack/
 unzip -p ./unpack/sencha-cmd.run.zip >./${SENCHA_DIR}/sencha-cmd.run
 rm ./unpack/sencha-cmd.run.zip
 
