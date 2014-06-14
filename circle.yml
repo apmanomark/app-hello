@@ -39,8 +39,9 @@ dependencies:
     # Install Phonegap CLI
     - npm install -g phonegap
     
-    # Install Karma Test Runner
+    # Install Karma Test Runner and CLI
     - npm install karma
+    - npm install -g karma-cli
     
     # Install Jasimine Adaptor for Karma
     - npm install karma-jasmine@2_0 --save-dev
