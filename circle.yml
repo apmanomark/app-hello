@@ -45,6 +45,7 @@ dependencies:
     - chmod +x ./sencha-fresh.sh
     - ./sencha-fresh.sh
     - printenv
+    - sencha which
     # sencha
     
 
