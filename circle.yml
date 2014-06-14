@@ -50,4 +50,35 @@ dependencies:
   #cache_directories:
     #- "custom_1"   # relative to the build directory 
 
-  
+
+
+## Customize test commands
+
+test:
+  override:
+    - jasimine test/unit-tests # use Jasimine for testing
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
