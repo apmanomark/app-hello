@@ -43,8 +43,6 @@ dependencies:
     - chmod +x ./gem.sh
     - ./gem.sh
     
-# *** TODO ***
-    
     # Install Karma Test Runner, CLI and PhantomJS driver
     - npm install karma
     - npm install -g karma-cli
