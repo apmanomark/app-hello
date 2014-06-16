@@ -1,0 +1,105 @@
+
+## TODO:
+
+    # PHASE 1
+        # Add Sencha hello world to repo [done]
+        # Add one simple Jasimine unit test
+        # Sencha phonegap (android) build (to test link)
+
+    # PHASE 2
+        # BDD tests
+            # Node run tests; nightwatch, yadda etc. or look at ruby cabraya etc.
+
+
+## Set build sub-directory
+
+general:
+  build_dir: build
+
+
+## Configure the test machine
+
+machine:
+  environment:
+    TF_API_TOKEN: ba0eece2d940f181bc515d98bfe01bd3_MTkwMjMwMDIwMTQtMDYtMDkgMTE6MTA6MDUuOTA1ODU3
+    TF_TEAM_TOKEN: 4a6014a1548c3d07d2097abbdfb5d36b_MzkxMzc3MjAxNC0wNi0wOSAxMzowMjo0OS4zMDYxMTU
+        
+
+        
+    # Override /etc/hosts
+    
+  hosts:
+    circlehost: 127.0.0.1
+    dev.apmano.co: 127.0.0.1
+    
+    # make couchbase available
+
+  services:
+    - couchbase-server
+    
+    # set envionment variables
+    
+# for testflight  
+    
+    
+## Check out your code
+
+checkout:
+      
+## Set up your test dependencies
+
+dependencies:
+  override:
+    # sencha cmd (for easy phonegap build intergration)
+    # http://www.sencha.com/forum/showthread.php?278435-Install-over-command-line
+    - sh ./src/sencha-cmd.sh
+      
+    # phonehap cli
+    - sudo npm install -g phonegap
+      
+    #shenzhen for cli deployment to test flight
+    - gem install shenzhen
+
+    
+## Set up your test databases
+
+    # could use couch (non-mobile) for pre build testing
+
+
+## Run your tests
+
+    # run jasimine tests
+    
+    
+    # run BDD tests (in browser)
+
+
+## Build the app
+
+    # phonegap build
+    
+    
+
+## deploy your code
+
+    # send to phonegap build
+    
+    
+    # run testingbot tests
+
+
+    # deploy to testflight using shenzhen
+    
+deployment:
+  device-prod:
+    branch: master
+    commands:
+      - ipa distribute:testflight -a TF_API_TOKEN -T TF_TEAM_TOKEN
+
+
+## Custom notifications
+notify:
+  webhooks:
+    # A list of hashes representing hooks. Only the url field is supported.
+    # Send email after build
+    - url: https://zapier.com/hooks/catch/02t5i/

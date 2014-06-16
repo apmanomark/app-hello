@@ -24,14 +24,14 @@ machine:
     #TF_TEAM_TOKEN: 4a6014a1548c3d07d2097abbdfb5d36b_MzkxMzc3MjAxNC0wNi0wOSAxMzowMjo0OS4zMDYxMTU
 
 #general:
-  #build_dir: build
+  build_dir: build
 
 
 ## Customize dependencies
 
 dependencies:
   pre:
-    # Install Sencha CMD
+    # Install Sencha CMD and check version
     - chmod +x ./sencha-fresh.sh 
     - ./sencha-fresh.sh
     - sencha which
@@ -51,22 +51,25 @@ dependencies:
     # Install Jasimine Adaptor for Karma
     - npm install karma-jasmine@2_0 --save-dev
 
-  #cache_directories:
-    #- "custom_1"   # relative to the build directory 
-
-
-
 ## Customize test commands
 
 test:
   override:
     - karma --version #test karma works
     
+# TODO: 
 
+    # add sencha app to repo
+    # run a jasimine test
+    # send to phonegap build via api (using shengen) - for android build for now
+    # 
 
-
-
-
+deployment:
+  staging:
+    branch: master
+      commands:
+      - ./source/scripts/bash/ci/phonegap_build.sh
+      #- ./source/scripts/bash/ci/testflight_upload.sh
 
 
 

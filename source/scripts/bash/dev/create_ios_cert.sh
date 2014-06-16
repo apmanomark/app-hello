@@ -1,0 +1,1 @@
+openssl req -subj "/CN=Eoin Dunn/O=Ryan" -nodes -newkey rsa:2048 -keyout private.key -out request.csr
