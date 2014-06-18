@@ -5,13 +5,13 @@
 	 * This is the name of your application, which is displayed on the device when the app is installed. On IOS, this should match
 	 * the name of your application in the Apple Provisioning Portal.
 	 */
-	"applicationName":"qfApp01",
+	"applicationName":"QF001",
 
 	/**
 	 * @cfg  applicationId
 	 * This is the name namespace for your application. On IOS, this should match the name of your application in the Apple Provisioning Portal.
 	 */
-	"applicationId":"qfApp01",
+	"applicationId":"com.quizfactor.app01",
 
 	/**
 	 * @cfg  bundleSeedId
@@ -116,7 +116,7 @@
 	 *
 	 * When using a certificatePath on Windows, you do not need to specify this.
 	 */
-	"certificateAlias":"iPhone Developer",
+	"certificateAlias":"Mark Dorrill",
 	/**
 	 * @cfg  certificatePassword
 	 * The password which was specified during certificate export
@@ -126,7 +126,7 @@
 	 * @cfg  provisionProfile
 	 * The path to the provision profile (APP_NAME.mobileprovision) which you can create and then download from Apple's provisioning portal
 	 */
-	"provisionProfile":"",
+	"provisionProfile":"~/workspace/source/certs/ios/Mark_Dorrill_3gs_Test.mobileprovision",
 	/**
 	 * @cfg  notificationConfiguration
 	 * Notification configuration for push notifications, can be "debug", "release" or empty if you don't use push notifications in your project.
