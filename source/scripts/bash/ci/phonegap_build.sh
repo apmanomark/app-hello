@@ -6,6 +6,8 @@
 
 pwd
 
+mkdir ./home/ubuntu/app-hello/build/
+
 cd ./source/apps/qf-app-01
 
 sencha -d app build native > ci-buildlog.txt
