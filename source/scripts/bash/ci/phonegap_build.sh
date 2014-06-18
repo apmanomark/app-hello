@@ -10,7 +10,7 @@ cd ./source/apps/qf-app-01
 
 sencha -d app build native # > ci-buildlog.txt
 
-cat ci-buildlog.txt
+# cat ci-buildlog.txt
 
 cd ../
 
