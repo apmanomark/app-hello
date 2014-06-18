@@ -68,7 +68,9 @@ deployment:
   staging:
     branch: master
     commands:
+    - chmod +x ./source/scripts/bash/ci/phonegap_build.sh
     - ./source/scripts/bash/ci/phonegap_build.sh
+    
     #- ./source/scripts/bash/ci/testflight_upload.sh
 
 
