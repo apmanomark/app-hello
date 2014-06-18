@@ -17,14 +17,14 @@
 	 * @cfg  bundleSeedId
 	 * A ten character string which stands before aplication ID in Apple Provisioning Portal
 	 */
-	"bundleSeedId":"KPXFEPZ6EF",
+	"bundleSeedId":"F7EXAAP5G5",
 
 	/**
 	 * @cfg  versionString
 	 * @required
 	 * This is the version of your application.
 	 */
-	"versionString":"1.0",
+	"versionString":"0.1",
 
 	/**
 	 * @cfg  versionCode
@@ -82,7 +82,7 @@
 	 *  - Android
 	 *  - AndroidEmulator
 	 */
-	"platform":"iOSSimulator",
+	"platform":"iOS",
 
 	/**
 	 * @cfg  deviceType
@@ -96,7 +96,7 @@
 	 *  - iPad
 	 *  - Universal
 	 */
-	"deviceType":"Universal",
+	"deviceType":"iPhone",
 
 	/**
 	 * @cfg  certificatePath
@@ -116,12 +116,12 @@
 	 *
 	 * When using a certificatePath on Windows, you do not need to specify this.
 	 */
-	"certificateAlias":"",
+	"certificateAlias":"iPhone Developer",
 	/**
 	 * @cfg  certificatePassword
 	 * The password which was specified during certificate export
 	 */
-	"certificatePassword":"",
+	"certificatePassword":"quiz",
 	/**
 	 * @cfg  provisionProfile
 	 * The path to the provision profile (APP_NAME.mobileprovision) which you can create and then download from Apple's provisioning portal
