@@ -67,9 +67,9 @@ test:
 deployment:
   staging:
     branch: master
-      commands:
-      - ./source/scripts/bash/ci/phonegap_build.sh
-      #- ./source/scripts/bash/ci/testflight_upload.sh
+    commands:
+    - ./source/scripts/bash/ci/phonegap_build.sh
+    #- ./source/scripts/bash/ci/testflight_upload.sh
 
 
 
