@@ -8,11 +8,11 @@ pwd
 
 cd ./source/apps/qf-app-01
 
-sencha app build native # > ci-buildlog.txt
+sencha -d app build native > ci-buildlog.txt
 
 # -d
 
-# cat ci-buildlog.txt
+cat ci-buildlog.txt
 
 cd ../
 
@@ -24,9 +24,9 @@ ls
 
 pwd
 
-# cd ./home/ubuntu/app-hello/build/
+cd ./home/ubuntu/app-hello/build/
 
-cd  /home/ubuntu/app-hello/source/apps/qf-app-01/build/
+# cd  /home/ubuntu/app-hello/source/apps/qf-app-01/build/
 
 ls
 
