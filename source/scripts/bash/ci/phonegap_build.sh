@@ -34,6 +34,8 @@ ls
 
 pwd
 
+cat /tmp/script116143688
+
 
 
 
