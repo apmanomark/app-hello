@@ -6,7 +6,7 @@
 
 pwd
 
-mkdir ./home/ubuntu/app-hello/build/
+mkdir build
 
 cd ./source/apps/qf-app-01
 
