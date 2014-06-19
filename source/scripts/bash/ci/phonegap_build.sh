@@ -26,15 +26,15 @@ ls
 
 pwd
 
-cd ./home/ubuntu/app-hello/build/
+# cd ./home/ubuntu/app-hello/build/
 
 # cd  /home/ubuntu/app-hello/source/apps/qf-app-01/build/
 
-ls
+# ls
 
-pwd
+# pwd
 
-cat /tmp/script116143688
+# cat /tmp/script116143688
 
 
 
