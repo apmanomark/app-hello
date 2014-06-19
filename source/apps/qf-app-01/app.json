@@ -16,7 +16,7 @@
      * This value is needed when build to resolve your application's dependencies if it requires server-side resources
      * that are not accessible via file system protocol.
      */
-    "url": null,
+    "url": "https://app-hello-c9-ap_test_tools.c9.io/source/apps/qf-app-01/build/production/qfApp01/index.html",
 
     /**
      * List of all JavaScript assets in the right execution order.

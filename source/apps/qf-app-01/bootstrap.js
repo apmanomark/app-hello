@@ -45,6 +45,8 @@ Ext.Loader.addClassPathMappings({
   "Ext.device.sqlite.SQLResultSet": "touch/src/device/sqlite/Sencha.js",
   "Ext.device.sqlite.SQLResultSetRowList": "touch/src/device/sqlite/Sencha.js",
   "Ext.device.sqlite.SQLTransaction": "touch/src/device/sqlite/Sencha.js",
+  "qf-app-01": "app",
+  "qf-app-01.model.rounds": "app/model/quiz.js",
   "qfApp01": "app"
 });
 Ext.ClassManager.addNameAlternateMappings({
@@ -667,7 +669,11 @@ Ext.ClassManager.addNameAlternateMappings({
   "Ext.viewport.WindowsPhone": [
     "Ext.viewport.WP"
   ],
-  "qfApp01.view.Main": []
+  "qf-app-01.model.rounds": [],
+  "qf-app-01.model.user": [],
+  "qfApp01.view.Another": [],
+  "qfApp01.view.Main": [],
+  "qfApp01.view.Onboard": []
 });
 Ext.ClassManager.addNameAliasMappings({
   "Ext.AbstractComponent": [],
@@ -1386,8 +1392,14 @@ Ext.ClassManager.addNameAliasMappings({
   "Ext.viewport.Ios": [],
   "Ext.viewport.Viewport": [],
   "Ext.viewport.WindowsPhone": [],
-  "qfApp01.view.Main": [
+  "qf-app-01.model.rounds": [],
+  "qf-app-01.model.user": [],
+  "qfApp01.view.Another": [
     "widget.main"
+  ],
+  "qfApp01.view.Main": [],
+  "qfApp01.view.Onboard": [
+    "widget.onboardview"
   ]
 });
 
