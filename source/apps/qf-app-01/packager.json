@@ -126,7 +126,7 @@
 	 * @cfg  provisionProfile
 	 * The path to the provision profile (APP_NAME.mobileprovision) which you can create and then download from Apple's provisioning portal
 	 */
-	"provisionProfile":"~/workspace/source/certs/ios/Mark_Dorrill_3gs_Test.mobileprovision",
+	"provisionProfile":"~/workspace/certs/ios/Mark_Dorrill_3gs_Test.mobileprovision",
 	/**
 	 * @cfg  notificationConfiguration
 	 * Notification configuration for push notifications, can be "debug", "release" or empty if you don't use push notifications in your project.
